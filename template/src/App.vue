@@ -24,7 +24,6 @@
 import locales from './lang/index'
 export default {
   name: 'App',
-  components: { spHeader, spMenu, spBreadcrumb },
   data() {
     return {
       title: this.$i18n('%s project', ['{{ name }}']),
