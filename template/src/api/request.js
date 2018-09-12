@@ -1,7 +1,7 @@
 import axios from 'axios'
 import Vue from 'vue'
 
-import { i18n } from 'acribus/packages/helper/i18n/index'
+import { i18n } from 'acribus'
 
 export const baseURL = __BASEURL__
 
