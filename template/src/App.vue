@@ -1,6 +1,6 @@
 <template>
   <div id="app" v-if="display">
-    <sp-header
+    <a-header
       :user="defaultUser"
       :locales="locales"
       :logout="logout">
@@ -9,11 +9,11 @@
         <div>\{{ title }}</div>
       </span>
       <span>\{{ description }}</span>
-    </sp-header>
-    <sp-menu class="sp-left-side" :data="menuData"></sp-menu>
+    </a-header>
+    <a-menu class="sp-left-side" :data="menuData"></a-menu>
     <div class="sp-right-side">
       <article>
-        <sp-breadcrumb :data="menuData"></sp-breadcrumb>
+        <a-breadcrumb :data="menuData"></a-breadcrumb>
         <router-view></router-view>
       </article>
     </div>
@@ -21,11 +21,7 @@
 </template>
 
 <script>
-import spHeader from 'acribus/packages/components/Header/index.js'
-import spMenu from 'acribus/packages/components/Menu/index.js'
-import spBreadcrumb from 'acribus/packages/components/Breadcrumb/index.js'
 import locales from './lang/index'
-
 export default {
   name: 'App',
   components: { spHeader, spMenu, spBreadcrumb },
